@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+*.Rproj
+*.docx
+plot-data.csv
+04/
+05/
+06/
+submission.Rmd
+
+
