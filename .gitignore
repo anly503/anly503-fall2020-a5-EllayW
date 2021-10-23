@@ -9,5 +9,6 @@ plot-data.csv
 04/
 05/
 06/
-
-
+altair.ipynb
+.ipynb.checkpoints/
+__pycache__/
