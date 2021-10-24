@@ -90,3 +90,5 @@ final_chart.properties(title = 'Total Consumption'
                       ).configure_title(orient='top',anchor='middle')
 
 final_chart.save('altair.html')
+
+final_chart
