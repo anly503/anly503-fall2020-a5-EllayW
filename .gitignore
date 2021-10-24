@@ -11,6 +11,7 @@ plot-data.csv
 06/
 altair.ipynb
 .ipynb.checkpoints/
+.ipynb_checkpoints/
 __pycache__/
 index.Rmd
 index.ipynb
