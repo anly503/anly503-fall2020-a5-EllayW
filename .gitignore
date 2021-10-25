@@ -1,4 +1,3 @@
-.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
@@ -13,5 +12,4 @@ altair.ipynb
 .ipynb.checkpoints/
 .ipynb_checkpoints/
 __pycache__/
-index.Rmd
 index.ipynb

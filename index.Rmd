@@ -1,0 +1,42 @@
+---
+title: "ANLY503 Assignment5"
+output:
+  html_document:
+    #toc: true
+    self_contained: no
+    #toc_depth: 6
+---
+
+### Altair
+
+Question 1: For each household, which appliance/period in a week/day used the most electricity? 
+
+This plot shows the consumption of 3 households by weekdays, appliances and different time period in a day, in billions. 
+
+It is also interactive between each other. By clicking one bar, we can elaborate any parts with details. For example, choosing bar with different color will result in the display of different households. Since we use `consumption` and `house` in both plots, make them interactive will be the best choice due to convenience. 
+
+By this plot, we can explore the different consumption details by weekdays/time periods daily and appliances. Since bar plots will show the difference clearly, those are chosen as below. Pie chart/line plot could make it better but unfortunately, pie charts are not supported in Altair in python.
+
+To answer the question 1, we could see house 4 used Freezer the most, and consumed the most when its Friday in a week, and at night in a day. House 5 used Fridge the most, and consumed the most when its Friday in a week, and at night in a day. House 6 used Entertainment (TV/stereo) the most, and consumed the most when its Friday in a week, and at night in a day.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.cap="A simple plot"}
+htmltools::includeHTML('./docs/altair.html')
+```
+
+
+### Plotly
+This plot is a density plot by `date` and `appliances` of house 4. Since from the first plot, we see house 4 consume more electricity in millions than the other two households, we now zoom in and focus on house 4 with question 2. 
+
+Question 2: "Which are the abnormal time period in house 4 based on their daily consumption?"
+
+Different with the first plot, this one shows daily `consumption` by `appliances` with details. As a time-series data set, line plot and density plot are the most appropriate one to show the details daily.
+
+Also, by clicking the legend, for example "Freezer" once, this category will be isolated, so we can subtract the abnormal / extreme category and explore others. The time slot at the bottom gives a time measure of the whole period. We can easily move forward / backward with it. 
+
+We find out that from late Dec. 2012 to early Jan. 2013, house 4 had abnormal consumption, especially on 'Freezer'.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+htmltools::includeHTML('./docs/plotly.html')
+```
+
+
