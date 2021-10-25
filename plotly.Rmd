@@ -1,9 +1,14 @@
+---
+output:
+  html_fragment
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(plotly)
 library(dplyr)
 library(tidyr)
 library(htmlwidgets)
 
-df <- read.csv('plot-data.csv')
+df <- read.csv('C:/Users/Ella/Desktop/Fall2021/503/A5/anly503-fall2020-a5-EllayW/plot-data.csv')
 df2 <- df%>%
   select(date, appliance, house,consumption,Month) %>%
   group_by(date,appliance,house,Month) %>%
@@ -58,27 +63,34 @@ fig <- fig %>% layout(
 ### attempt 2 -- failed
 ## DO NOT RUN
 #####################################################
-fig2 <- shared_data %>% plot_ly() %>%
-  add_pie(., 
-          labels = ~appliance, 
-          values = ~consumption, 
-          textinfo = 'label+percent') %>%
-  layout(title = 'Pie Chart of Consumption(M) by Appliances')
+#fig2 <- shared_data %>% plot_ly() %>%
+ # add_pie(., 
+  #        labels = ~appliance, 
+   #       values = ~consumption, 
+    #      textinfo = 'label+percent') %>%
+  #layout(title = 'Pie Chart of Consumption(M) by Appliances')
 
 
-fig2 <- fig2 %>% layout(title = 'Pie Chart of Consumption(M) by Appliances',
-                      xaxis = list(showgrid = FALSE, 
-                                   zeroline = FALSE, 
-                                   showticklabels = FALSE),
-                      yaxis = list(showgrid = FALSE, 
-                                   zeroline = FALSE, 
-                                   showticklabels = FALSE))
+#fig2 <- fig2 %>% layout(title = 'Pie Chart of Consumption(M) by Appliances',
+                      #xaxis = list(showgrid = FALSE, 
+                       #            zeroline = FALSE, 
+                        #           showticklabels = FALSE),
+                      #yaxis = list(showgrid = FALSE, 
+                       #            zeroline = FALSE, 
+                        #           showticklabels = FALSE))
 
 #subplot(fig,fig2,nrow=2)
 ###########################################
 
-saveWidget(fig, file="plotly.html")
+#saveWidget(fig, file="plotly.html")
 
+
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 ## run the output
 
 fig
+```
+
+

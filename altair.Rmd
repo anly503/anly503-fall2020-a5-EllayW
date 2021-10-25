@@ -1,0 +1,8 @@
+---
+output: html_fragment
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE,fig.cap="A simple plot"}
+htmltools::includeHTML('C:/Users/Ella/Desktop/Fall2021/503/A5/anly503-fall2020-a5-EllayW/altair.html')
+```
+

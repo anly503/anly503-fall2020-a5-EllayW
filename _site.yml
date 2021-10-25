@@ -1,0 +1,14 @@
+name: "my-website"
+output_dir: "docs"
+navbar:
+  title: "ANLY503"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    toc: True
+    theme: cosmo
+    highlight: kate
